@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const User = require("../database/cadastro");
-
+const Jogos = require("../database/catalago");
 
 exports.postLoginUser = (req, res) => {
     const { email, password } = req.body;
